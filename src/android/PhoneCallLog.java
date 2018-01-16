@@ -43,7 +43,7 @@ public class PhoneCallLog extends CordovaPlugin {
 
     }
 
-    public String getCallList() {
+    public JSONArray getCallList() {
 
        /**
         * this.firstCall = 0;
@@ -63,7 +63,7 @@ public class PhoneCallLog extends CordovaPlugin {
             res = this.getCallDetails(context);
         }
 
-        return res.toString();
+        return res;
 
     }
 
@@ -101,6 +101,7 @@ public class PhoneCallLog extends CordovaPlugin {
             String callDuration = managedCursor.getString(duration);
             String dir = null;
             int dircode = Integer.parseInt(callType);
+
             switch (dircode) {
                 case CallLog.Calls.OUTGOING_TYPE:
                     dir = "OUTGOING";
@@ -114,13 +115,16 @@ public class PhoneCallLog extends CordovaPlugin {
                     dir = "MISSED";
                     break;
             }
+
             try {
+
                 call.put("phoneNumber", phNumber);
                 call.put("date", prettyDate);
                 call.put("type", dir);
                 call.put("caller", caller);
                 call.put("callDuration", callDuration);
                 calls.put(call);
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }
