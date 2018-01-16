@@ -13,7 +13,6 @@ public class PhoneCallLog extends CordovaPlugin {
 
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 
-
         return true;
     }
 

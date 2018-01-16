@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="com.friendlystudio.phonecalllog" version="0.1.2">
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="com.friendlystudio.phonecalllog" version="0.1.1">
     <name>PhoneCallLog</name>
     <description>A phone call log</description>
     <license>MIT</license>
