@@ -1,0 +1,34 @@
+{
+    "name": "com.friendlystudio.phonecalllog",
+    "version": "0.1.0",
+    "description": "Cordova phone call log plugin",
+    "cordova": {
+    "id": "com.friendlystudio.phonecalllog",
+    "platforms": [
+      "android"
+    ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/friendlystudio/cordova-phone-calllog.git"
+    },
+    "keywords": [
+    "phonegap",
+    "phone",
+    "call",
+    "cordova",
+    "android",
+    "phone call",
+    "call log"
+    ],
+    "author": {
+        "name": "Milan Kyncl",
+        "email": "milan@friendlystudio.cz",
+        "homepage": "https://www.friendlystudio.cz"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/friendlystudio/cordova-phone-calllog/issues"
+    },
+    "homepage": "https://github.com/friendlystudio/cordova-phone-calllog#readme"
+}
