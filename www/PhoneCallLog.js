@@ -1,12 +1,10 @@
 
+
 var PhoneCallLog = {
 
-    getCallLog: function(successCallback, errorCallback) {
+    getCallLog: function(successCallback) {
 
-        errorCallback = errorCallback || this.errorCallback;
-
-        cordova.exec(successCallback, errorCallback, 'PhoneCallLog', 'getCallLog', []);
-
+        cordova.exec(successCallback, null, 'PhoneCallLog', 'getCallLog', []);
     }
 };
 
